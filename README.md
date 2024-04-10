@@ -4,7 +4,7 @@
   ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
-  This app will ask the user a few questions in the treminal and with the answers given by the user a README.md file. It renders all main elements and generategenerates license badges and links with the information entered.
+  This app will ask the user a few questions in the treminal and with the answers given by the user a README.md file. It renders all main elements and generategenerates license badges and links with the information entered. This README was actually created with this app.
 
   ## Table of Contents
   - [Usage](#usage)
