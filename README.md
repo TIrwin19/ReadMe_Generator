@@ -1,7 +1,7 @@
   # README Generator
 
   ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)]
+  ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)
 
   ## Description
   This app will ask the user a few questions in the treminal and with the answers given by the user a README.md file. It renders all main elements and generategenerates license badges and links with the information entered.
