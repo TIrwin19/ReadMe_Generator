@@ -4,8 +4,19 @@ function renderLicenseBadge(license) {
   if(license == 'No License' || ''){
     return ''
   }
-  return `![GitHub license](https://img.shields.io/badge/License-${license}-yellow.svg)`
+  return `![GitHub license](https://img.shields.io/badge/License-${license}-${badgeColor(license)}.svg)`
 }
+
+function badgeColor(license){
+  if(license == 'MIT'){
+    return 'yellow'
+  } else if (license == 'ISC'){
+    return 'blue'
+  } else if (license == 'EPL_1.0') {  
+    return 'red'
+  } else {return ''}
+}
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -68,6 +79,7 @@ function generateMarkdown(data) {
   #### ${licenseName(data.license)}
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
+  You can also check out the LICENSE in the repo.
 
   ## How to Contribute
   Check out the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
