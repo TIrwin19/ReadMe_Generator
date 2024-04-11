@@ -51,15 +51,15 @@ function licenseName(license){
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
-  # ${data.title}
+  # ${answers.title}
 
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(answers.license)}
   ${'[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)'}
 
   ## Description
-  ${data.description}
+  ${answers.description}
 
   ## Table of Contents
   - [Usage](#usage)
@@ -70,25 +70,25 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Usage 
-  ${data.usage}
+  ${answers.usage}
 
   ## Credits
-  ${data.credits}
+  ${answers.credits}
 
   ## License
-  #### ${licenseName(data.license)}
-  ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
+  #### ${licenseName(answers.license)}
+  ${renderLicenseSection(answers.license)}
+  ${renderLicenseLink(answers.license)}
   You can also check out the LICENSE in the repo.
 
   ## How to Contribute
   Check out the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
 
   ## Tests
-  ${data.tests}
+  ${answers.tests}
 
   ## Questions
-  If you have any questions check out my [Github](https://github.com/${data.github}) or send me an email at ${data.email}.
+  If you have any questions check out my [Github](https://github.com/${answers.github}) or send me an email at ${answers.email}.
 `;
 }
 
