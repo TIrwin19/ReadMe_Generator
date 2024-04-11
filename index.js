@@ -31,7 +31,7 @@ const questions = [
             },
             'No License'
         ],
-        default: ['MIT'] 
+        default: ['MIT']
     },
     {
         name: 'tests',
